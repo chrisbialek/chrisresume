@@ -3,9 +3,47 @@ html, body, #hero {
     min-width: 300px;
 }
 
+@font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IM Fell French Canon Pro';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+}
+
 header {
-    height: 60%;
-    min-height: 400px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mountain-range.jpg) no-repeat;
+    padding-top: 61.93333333%;
+    background-size: cover;
+    font-family: 'Sucrose Bold Two';
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45.8%;
+}
+
+header h1 {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 12vw;
+    line-height: .8;
+    margin-top: 0;
+    text-align: center;
+}
+
+header h1 span {
+    display: block;
+    font-size: 8.75vw;
 }
 
 #hero {
@@ -49,17 +87,17 @@ section.dark {
 }
 
 .container-fluid {
-    padding-right:0;
-    padding-left:0;
-    margin-right:auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
     margin-left: auto;
 }
 
-@media (max-height: 800px), (max-width: 500px){
-    #hero h2{
+@media (max-height: 800px), (max-width: 500px) {
+    #hero h2 {
         font-size: 45px;
     }
-    #hero h4{
+    #hero h4 {
         font-size: 20px;
     }
     #hero button {
@@ -79,11 +117,9 @@ section.dark {
         -o-background-size: cover;
         background-size: cover;
     }
-
     #projects p.card-text {
         height: 80px !important;
     }
-
     #projects .card-body {
         height: 220px;
     }
